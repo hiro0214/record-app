@@ -1,6 +1,6 @@
-import { Home } from '../components/pages/user/Home';
-import { History } from '../components/pages/user/History';
-import { Setting } from '../components/pages/user/Setting';
+import { Home } from '../pages/user/Home';
+import { History } from '../pages/user/History';
+import { Setting } from '../pages/user/Setting';
 
 export const userRoutes = [
   {
