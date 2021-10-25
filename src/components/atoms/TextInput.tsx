@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import { ChangeEvent, memo, VFC } from 'react';
+import styled from 'styled-components';
 
 type props = {
   value: string;

@@ -1,8 +1,8 @@
 import { ChangeEvent, memo, useCallback, useState } from 'react';
+import { useHistory } from 'react-router';
 import { TextInput } from '../components/atoms/TextInput';
 import { Button } from '../components/atoms/Button';
 import { Form } from '../components/organism/Form';
-import { useHistory } from 'react-router';
 
 export const Regist = memo(() => {
   const [registId, setRegistId] = useState('');
