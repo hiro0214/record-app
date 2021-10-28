@@ -3,14 +3,20 @@ import { memo, VFC } from 'react';
 
 type props = {
   label: string;
+  utility?: string;
+  isDisabled?: boolean;
   isLoading?: boolean;
   onClick: () => void;
 };
 
 export const Button: VFC<props> = memo((props) => {
-  const { label, isLoading, onClick } = props;
+  const { label, utility, isDisabled, isLoading, onClick } = props;
   return (
-    <SButton onClick={onClick} className={isLoading ? 'isLoading' : ''}>
+    <SButton
+      onClick={onClick}
+      className={`${isLoading ? 'isLoading' : ''} ${utility}`}
+      disabled={isDisabled}
+    >
       {isLoading ? 'ローディング中' : label}
     </SButton>
   );
@@ -31,6 +37,10 @@ const SButton = styled.button`
     color: teal;
     background: #fff;
     border: solid 1px teal;
+  }
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
   }
   &.isLoading {
     color: teal;

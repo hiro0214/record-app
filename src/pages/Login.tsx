@@ -1,6 +1,7 @@
 import { ChangeEvent, memo, useCallback, useState } from 'react';
 import { useHistory } from 'react-router';
 import { Button } from '../components/atoms/Button';
+import { Hdg } from '../components/atoms/Hdg';
 import { TextInput } from '../components/atoms/TextInput';
 import { Form } from '../components/organism/Form';
 
@@ -20,17 +21,16 @@ export const Login = memo(() => {
 
   return (
     <Form>
-      <p className="hdg">ログイン</p>
+      <Hdg size={'hdg--1'}>ログイン</Hdg>
       <TextInput
         value={userId}
         onChange={onChangeUserId}
         placeholder="ログインIDを入力してください"
       />
-      <Button label={'ログイン'} isLoading={loading} onClick={login}></Button>
-      <p style={{ marginTop: '50px', marginBottom: '10px' }}>
-        初めての方はこちらから登録してください。
-      </p>
-      <Button label={'新規登録'} onClick={regist}></Button>
+      <Button utility={'mt30 mb30'} label={'ログイン'} isLoading={loading} onClick={login} />
+      <hr />
+      <p className={'mt40'}>初めての方はこちらから登録してください。</p>
+      <Button utility={'mt30'} label={'新規登録'} onClick={regist}></Button>
     </Form>
   );
 });

@@ -21,15 +21,11 @@ const SContainer = styled.div`
   width: 100%;
   min-height: 100vh;
   text-align: center;
-  .hdg {
-    font-size: 20px;
-    font-weight: bold;
-  }
 `;
 
 const SForm = styled.div`
   width: 50%;
-  padding: 30px 40px;
+  padding: 40px 60px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);

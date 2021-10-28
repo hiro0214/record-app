@@ -1,1 +1,17 @@
-{}
+[
+  {
+    "id": "11",
+    "nickname": "tanama",
+    "data": {}
+  },
+  {
+    "id": "21",
+    "nickname": "yamada",
+    "data": {}
+  },
+  {
+    "id": "31",
+    "nickname": "suzuki",
+    "data": {}
+  }
+]
